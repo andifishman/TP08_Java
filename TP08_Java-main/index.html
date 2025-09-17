@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TP - Introducción a JavaScript</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <h1>Trabajo Práctico: Introducción a JavaScript</h1>
+
+  <section>
+    <h2>Ejercicio 1: Calculadora de edad</h2>
+    <p>Ingresá tu nombre y fecha de nacimiento. Al hacer clic, se mostrará tu edad.</p>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="date" id="fecha">
+    <button onclick="ejercicio1()">Calcular edad</button>
+    <p id="resultado1"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 2: Tirando fruta</h2>
+    <p>Ingresá el nombre de una fruta. Te diremos si está en nuestra lista.</p>
+    <input type="text" id="fruta" placeholder="Ej: Manzana">
+    <button onclick="ejercicio2()">Buscar fruta</button>
+    <p id="resultado2"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 3: Comparando datos y tipos</h2>
+    <p>Hacé clic para ver comparaciones entre valores y tipos en JavaScript.</p>
+    <button onclick="ejercicio3()">Mostrar comparaciones</button>
+    <pre id="resultado3"></pre>
+  </section>
+
+  <section>
+    <h2>Ejercicio 4: Objeto ciudad</h2>
+    <p>Hacé clic para ver los datos de una ciudad representados como objeto.</p>
+    <button onclick="ejercicio4()">Mostrar ciudad</button>
+    <pre id="resultado4"></pre>
+  </section>
+
+  <section>
+    <h2>Ejercicio 5: Doble de elementos</h2>
+    <p>Ingresá una lista de números separados por coma. Se mostrará el doble de cada uno.</p>
+    <input type="text" id="numeros" placeholder="Ej: 1,2,3">
+    <button onclick="ejercicio5()">Doblar números</button>
+    <p id="resultado5"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 6: Triángulo de asteriscos</h2>
+    <p>Hacé clic para mostrar un triángulo de asteriscos en consola o pantalla.</p>
+    <button onclick="ejercicio6A()">Triángulo simple</button>
+    <button onclick="ejercicio6B()">Triángulo centrado</button>
+    <pre id="resultado6"></pre>
+  </section>
+
+  <section>
+    <h2>Ejercicio 7: Nombres con 'A'</h2>
+    <p>Ingresá nombres separados por coma. Se mostrarán los que empiezan con 'A'.</p>
+    <input type="text" id="nombres" placeholder="Ej: Ana,Juan,Alberto">
+    <button onclick="ejercicio7()">Filtrar nombres</button>
+    <p id="resultado7"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 8: Reemplazar palabras</h2>
+    <p>Ingresá un texto, una palabra a reemplazar y la nueva palabra. Se mostrará el texto modificado.</p>
+    <input type="text" id="texto8" placeholder="Texto original">
+    <input type="text" id="buscar8" placeholder="Palabra a reemplazar">
+    <input type="text" id="reemplazo8" placeholder="Reemplazo">
+    <button onclick="ejercicio8()">Reemplazar</button>
+    <p id="resultado8"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 9: Cortar texto</h2>
+    <p>Ingresá un texto y un número. Se mostrará el texto cortado hasta esa cantidad de caracteres.</p>
+    <input type="text" id="texto9" placeholder="Texto">
+    <input type="number" id="cantidad9" placeholder="Cantidad de caracteres">
+    <button onclick="ejercicio9()">Cortar</button>
+    <p id="resultado9"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 10: String con separador</h2>
+    <p>Ingresá elementos separados por coma. Se mostrarán unidos por ' - '.</p>
+    <input type="text" id="elementos10" placeholder="Ej: uno,dos,tres">
+    <button onclick="ejercicio10()">Separar con guión</button>
+    <p id="resultado10"></p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 11: Calculadora de recaudación</h2>
+    <p>Ingresá pedidos con sus montos en formato "nombre:total", separados por coma. Se mostrará el total recaudado.</p>
+    <input type="text" id="pedidos11" placeholder="Ej: Pizza:15.5,Hamburguesa:8.75">
+    <button onclick="ejercicio11()">Calcular total</button>
+    <p id="resultado11"></p>
+  </section>
+
+
+  <script src="utils.js"></script>
+  <script src="ejercicios.js"></script>
+</body>
+</html>

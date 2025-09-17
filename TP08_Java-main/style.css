@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  padding: 30px;
+  color: #333;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+/* Secciones como tarjetas */
+section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+/* Título de cada ejercicio */
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #1e88e5;
+}
+
+/* Instrucciones */
+section p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #1e88e5;
+  outline: none;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+/* Resultados */
+p[id^="resultado"],
+pre[id^="resultado"] {
+  background-color: #f0f4c3;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  margin-top: 10px;
+  border-left: 5px solid #cddc39;
+  color: #333;
+}
+
+/* Responsive básico */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  input, button {
+    width: 100%;
+    max-width: none;
+  }
+
+  button {
+    margin-right: 0;
+  }
+}
